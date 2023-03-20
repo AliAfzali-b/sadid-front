@@ -1,0 +1,262 @@
+@font-face {
+  font-family: iran;
+  src: url("../fonts/Iranian\ Sans.ttf");
+}
+@font-face {
+  font-family: yekan;
+  src: url("../fonts/B\ Yekan_YasDL.com.ttf");
+}
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  font-family: iran;
+  direction: rtl;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-size: 10px;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50rem auto 12rem;
+  overflow-x: hidden;
+  justify-content: center;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.2);
+  grid-column: 1/-1;
+  background-image: url("../image/SVG/IMG_20220822_073508\ 1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* overflow-x: hidden; */
+}
+/* body header .banner {
+  
+} */
+body header .bannerA img {
+  margin-top: 22rem;
+
+  width: 30rem;
+}
+body header .bannerA :hover {
+  /* width: 31rem;
+  transition: 1000ms; */
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+body header > a {
+  color: aliceblue;
+  margin-top: 0.5rem;
+  background-color: #005aa7;
+  padding: 1rem 6rem;
+  border-radius: 1.5rem;
+  font-size: 2rem;
+  opacity: 0.8;
+  transition: 1000ms;
+}
+body header > a:hover {
+  font-size: 2.5rem;
+}
+
+body main {
+  width: 100%;
+  /* background-color: #eeeeee; */
+  grid-column: 1/-1;
+}
+body footer {
+  background-color: #ffffff;
+  grid-column: 1/-1;
+}
+
+nav {
+  background-color: #005aa7;
+  opacity: 0.7;
+  height: 6rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: -200px;
+  transition: 150ms;
+  animation-name: fadeIn;
+}
+#nav-icon {
+  position: fixed;
+  width: 500px;
+  opacity: 0.8;
+  top: 3%;
+  right: 85%;
+  /* left: 1%; */
+  transition: 150ms;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+
+  /* background-color: #005aa7; */
+}
+
+#nav-icon a :hover {
+scale: 1.2;
+}
+.nav-icon a {
+  margin: 0.3rem;
+  transition: 1s;
+}
+.nav-icon a:hover {
+  scale: 1.5;
+}
+nav .nav-logo {
+  flex: 1;
+  text-align: end;
+
+  padding-left: 1rem;
+}
+nav .nav-calendar {
+  flex: 3;
+  padding-right: 2rem;
+}
+nav .nav-icon {
+  flex: 5;
+  text-align: end;
+  padding-left: 2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: end;
+}
+nav .nav-arm {
+  flex: 1;
+  align-self: center;
+  height: 2rem;
+
+  height: 12rem;
+  position: relative;
+}
+nav .nav-arm img {
+  position: absolute;
+  bottom: 0;
+}
+body main {
+  background-image: url("../image/SVG/slider/7\ 889.svg");
+}
+.img-absolute-bottom {
+  position: absolute;
+  top: -10rem;
+}
+/* Set the size of the div element that contains the map */
+footer {
+  width: 100%;
+  height: 66.8rem;
+  background-color: #ffffff;
+  position: relative;
+}
+footer .footer-up {
+  background-color: #005aa7;
+  width: 100%;
+  height: 6.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-up a {
+  padding: 0rem 1.1rem;
+}
+footer .footer-up img {
+  width: 4rem;
+  height: 4rem;
+}
+
+#map {
+  width: 100%;
+  height: 30rem;
+}
+#map iframe {
+  width: 100%;
+  height: 30rem;
+}
+footer .footer-down {
+  background-color: #005aa7;
+  width: 100%;
+  height: 26rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerD-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footerD-right img {
+  width: 20rem;
+}
+.footerD-center {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin: 0rem 14rem 0rem 5rem;
+}
+.footerD-center a {
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+.footerD-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+.footerD-left img {
+  width: 1.5rem;
+}
+.footerD-left p {
+  font-size: 0.8rem;
+  padding-right: 0.5rem;
+  color: #ffffff;
+}
+.footerD-left-1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.3rem;
+}
+.footerD-left-2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.3rem;
+}
+.footerD-left-3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.3rem;
+}
+.footerD-left-4 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.3rem;
+}
+.footerD-left-5 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.3rem;
+}
+
+.div-slide-por {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 3px;
+  justify-content: space-evenly;
+}
+.por-card {
+  direction: rtl;
+}
