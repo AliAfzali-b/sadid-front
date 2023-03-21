@@ -1,9 +1,7 @@
 /* ..........news component .>................*/
 
-main {
-  overflow-x: hidden;
-  margin: 1px auto;
-}
+
+
 /* .........................slider................... */
 .slider {
   display: flex;
@@ -14,6 +12,7 @@ main {
   height: auto;
   margin: 1em auto;
 }
+
 .slides {
   /* width: 95vw; */
   /* border: 6px dotted pink; */
@@ -22,6 +21,7 @@ main {
   /* align-self: start; */
   /* overflow: hidden; */
 }
+
 .item {
   /* min-height: 36rem; */
   /* width: 90%; */
@@ -37,6 +37,7 @@ main .slider .slider-btns {
   gap: 10px;
   justify-content: center;
 }
+
 main .slider .slider-btns a {
   background-color: rgba(170, 169, 169, 0.05);
   font-size: 18px;
@@ -59,15 +60,18 @@ main .slider .slider-btns a {
   color: white;
   background: #005aa7;
 }
+
 .slider-btns a text {
   position: relative;
   z-index: 5;
 }
+
 main .slider .slider-btns a:hover {
   scale: 1.2;
   /* animation-name: fadeIn;
   animation-duration: 1s; */
 }
+
 body main .slider .slider-btns .selected {
   color: orange;
   border-bottom: solid orange;
@@ -95,6 +99,7 @@ body main .slider .slider-btns .selected {
   width: 100%;
   border: double;
 }
+
 .slide-3-mohtava {
   border: solid #a5a5a5;
   border-radius: 2em;
@@ -103,22 +108,25 @@ body main .slider .slider-btns .selected {
   align-items: center;
   justify-content: center;
 }
+
 .slide-3-mohtava-rotitr {
   color: #a5a5a5;
-  font-family: yekan;
+
   font-weight: 400;
   font-size: 1.5em;
   margin-bottom: 0.5em;
 }
+
 .slide-3-mohtava-titr {
   color: #005aa7;
-  font-family: yekan;
+
   font-weight: 700;
   font-size: 2em;
   margin-bottom: 0.5em;
 }
+
 .slide-3-mohtava-lid {
-  font-family: yekan;
+
   font-size: 1.4em;
   color: #181818;
   /* font-size: .91rem; */
@@ -132,6 +140,7 @@ body main .slider .slider-btns .selected {
   width: 100%;
   position: relative;
 }
+
 .slide-3-navigation-img {
   display: flex;
   justify-content: center;
@@ -141,17 +150,21 @@ body main .slider .slider-btns .selected {
   width: 100%;
   border-radius: 2em;
 }
+
 .slide-3-navigation-img img {
   margin: 1.5em;
   border-radius: 2em;
   cursor: pointer;
 }
+
 .slide-3-pages {
   display: none;
 }
+
 .slide-3-pages-active {
   display: contents;
 }
+
 .slide-3-navigation-img img:hover {
   animation-name: fadeIn;
   animation-duration: 1s;
@@ -161,6 +174,7 @@ body main .slider .slider-btns .selected {
 .slide-3-navigation-imgs {
   opacity: 0.4;
 }
+
 .slide-3-navigation-img-selected {
   scale: 1.1;
   opacity: 1;
@@ -169,10 +183,12 @@ body main .slider .slider-btns .selected {
 .slide-3-navigation-btn {
   cursor: pointer;
 }
+
 .slide-3-navigation-btn:hover {
   animation-name: fadeIn;
   animation-duration: 1s;
 }
+
 /* < اسلایدر 3 خبر */
 
 /* < اسلایدر 4 خبر */
@@ -191,6 +207,7 @@ body main .slider .slider-btns .selected {
   width: 100%;
   border: double;
 }
+
 .slide-3-mohtava1 {
   border: solid #a5a5a5;
   border-radius: 2em;
@@ -199,22 +216,25 @@ body main .slider .slider-btns .selected {
   align-items: center;
   justify-content: center;
 }
+
 .slide-3-mohtava-rotitr1 {
   color: #a5a5a5;
-  font-family: yekan;
+
   font-weight: 400;
   font-size: 1.5em;
   margin-bottom: 0.5em;
 }
+
 .slide-3-mohtava-titr1 {
   color: #005aa7;
-  font-family: yekan;
+
   font-weight: 700;
   font-size: 2em;
   margin-bottom: 0.5em;
 }
+
 .slide-3-mohtava-lid1 {
-  font-family: yekan;
+
   font-size: 1.4em;
   color: #181818;
   /* font-size: .91rem; */
@@ -228,6 +248,7 @@ body main .slider .slider-btns .selected {
   width: 100%;
   position: relative;
 }
+
 .slide-3-navigation-img1 {
   display: flex;
   justify-content: center;
@@ -237,6 +258,7 @@ body main .slider .slider-btns .selected {
   width: 100%;
   border-radius: 2em;
 }
+
 .slide-3-navigation-img1 img {
   margin: 1.5em;
   border-radius: 2em;
@@ -246,27 +268,34 @@ body main .slider .slider-btns .selected {
 .slide-3-pages1 {
   display: none;
 }
+
 .slide-3-pages-active1 {
   display: contents;
 }
+
 .slide-3-navigation-imgs1 {
   opacity: 0.4;
 }
+
 .slide-3-navigation-img-selected1 {
   scale: 1.1;
   opacity: 1;
 }
+
 .slide-3-navigation-imgs1 {
   cursor: pointer;
 }
+
 .slide-3-navigation-imgs1:hover {
   animation-name: fadeIn;
   animation-duration: 1s;
 }
-.slide-3-navigation1 > img {
+
+.slide-3-navigation1>img {
   cursor: pointer;
 }
-.slide-3-navigation1 > img:hover {
+
+.slide-3-navigation1>img:hover {
   animation-name: fadeIn;
   animation-duration: 1s;
 }
@@ -288,6 +317,7 @@ body main .slider .slider-btns .selected {
   border-radius: 5em;
   margin: 1px auto;
 }
+
 .video-slider-video video {
   border-radius: 90%;
 }
@@ -305,18 +335,22 @@ body main .slider .slider-btns .selected {
   align-items: start;
   padding-right: 2em;
 }
+
 .video-photos-div img {
   border-radius: 1rem;
   cursor: pointer;
 }
+
 .video-photos-div img:hover {
   animation-name: flash;
   scale: 1.3;
   animation-duration: 1s;
 }
+
 .video-photo {
   opacity: 0.4;
 }
+
 /* .video-arrow-right {
   position: absolute;
   right: -120em;
@@ -329,12 +363,15 @@ body main .slider .slider-btns .selected {
   opacity: 1;
   scale: 1.3;
 }
+
 .global-active {
   display: flex;
 }
+
 .global-active-img {
   display: flex;
 }
+
 /* .............video slider   >    */
 
 /* ............slid-news component */
@@ -354,7 +391,7 @@ body main .slider .slider-btns .selected {
   display: flex;
   flex-direction: column;
   font-weight: 700;
-  font-family: yekan;
+
   justify-content: start;
   font-size: 10px;
   margin-top: 6%;
@@ -363,6 +400,7 @@ body main .slider .slider-btns .selected {
   background-size: cover;
   min-height: 30vh;
 }
+
 .sadid .sadid-titr {
   margin: 1em auto;
   display: flex;
@@ -370,34 +408,39 @@ body main .slider .slider-btns .selected {
   justify-content: center;
   align-items: center;
   z-index: 15;
-  font-family: yekan;
+
 }
+
 .sadid .sadid-titr h1 {
   color: #ffffff;
   /* margin: 1rem auto; */
   font-size: 3em;
   cursor: pointer;
   text-align: justify;
-  font-family: yekan;
+
 }
+
 .sadid-titr h1:hover {
   animation-name: pulse;
   animation-duration: 1s;
 }
+
 .sadid .sadid-titr p {
-  font-family: yekan;
+
 
   margin-top: 1em;
   font-size: 1.6em;
   color: #ffffff;
   text-align: justify;
 }
+
 .sadid-absol-img {
   position: absolute;
   bottom: -1.6rem;
   left: 0rem;
   scale: 1.1;
 }
+
 /* .sadid-absol-img img {
   position: absolute;z-index: 111;
 } */
@@ -418,6 +461,7 @@ main .div-counter-container {
   text-align: center;
   flex-wrap: wrap;
 }
+
 .counter-container {
   display: flex;
   flex-direction: column;
@@ -427,12 +471,14 @@ main .div-counter-container {
   margin: 3rem 2rem;
   /* border: #005aa7 solid; */
 }
+
 .counter-container span {
   margin-top: 1rem;
   font-size: 1rem;
 }
+
 .counter {
-  font-family: yekan;
+
   font-size: 3rem;
 }
 
@@ -441,6 +487,7 @@ main .div-counter-container {
     flex-direction: column;
   }
 }
+
 /* .........< counter component */
 
 /* slide4  top site start */
@@ -459,11 +506,12 @@ main .div-counter-container {
   grid-template-rows: 400px;
   justify-content: center;
 }
+
 /* #slide4{
   display: flex;
   justify-content: center;
 } */
-.sliderImageTrain > div {
+.sliderImageTrain>div {
   /* border: 1px dashed #3ec515; */
   margin: 1rem;
 }
@@ -472,16 +520,20 @@ main .div-counter-container {
   grid-area: sliderImageTrain-frame;
   position: relative;
 }
+
 .sliderImageTrain-frame-image {
   position: relative;
 }
+
 .sliderImageTrain-frame-image img {
   width: 600px;
   height: 400px;
 }
+
 .sitfi {
   display: none;
 }
+
 .activeSit {
   display: block;
 }
@@ -495,6 +547,7 @@ main .div-counter-container {
   cursor: pointer;
   z-index: 120;
 }
+
 .sliderImageTrain-rightArrow {
   width: 4rem;
   height: 4rem;
@@ -503,6 +556,7 @@ main .div-counter-container {
   top: 38%;
   cursor: pointer;
 }
+
 .sliderImageTrain-controlBtn {
   width: 1rem;
   height: 1rem;
@@ -511,6 +565,7 @@ main .div-counter-container {
   bottom: 10%;
   left: 60%;
 }
+
 .sliderImageTrain-controlBtn img {
   padding: 0 0.5rem;
   cursor: pointer;
@@ -528,6 +583,7 @@ main .div-counter-container {
   align-items: center;
   overflow: hidden;
 }
+
 .sherkatha {
   width: 100%;
   box-sizing: border-box;
@@ -538,9 +594,11 @@ main .div-counter-container {
   align-items: center;
   overflow: hidden;
 }
+
 .sherkatha h4 {
   margin: 4rem 0 2rem 0;
 }
+
 .sherkatha span {
   font-size: 2rem;
 }
@@ -598,6 +656,7 @@ main .div-counter-container {
   display: flex;
   justify-content: space-around;
 }
+
 /* ......< social  .......... */
 /* side-bar-menu > */
 .hamburger-menu {
@@ -775,7 +834,7 @@ main .div-counter-container {
 
 .nav-menu-link {
   text-decoration: none;
-  font-family: yekan;
+
   font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -889,35 +948,43 @@ main .div-counter-container {
   position: relative;
   display: none;
 }
+
 .frame-vahedha p {
   cursor: pointer;
 }
+
 .frame-vahedha p:hover {
   scale: 1.2;
   animation-name: pluse;
   animation-duration: 1s;
 }
+
 .frame-vahedha img {
   cursor: pointer;
 }
+
 .frame-vahedha img:hover {
   animation-name: pulse;
   animation-duration: 1s;
 }
+
 .frame-vahedha-activate {
   display: flex;
 }
+
 .frame-vahedha img {
   border-radius: 10px;
 }
+
 .col-1 {
   position: absolute;
   right: 5%;
 }
+
 .col-1 p {
   font-size: 36px;
   font-weight: 800;
-  font-family: yekan;
+
   line-height: 62px;
   color: #ffffff;
 }
@@ -929,6 +996,7 @@ main .div-counter-container {
   right: 15%;
   z-index: 10;
 }
+
 .col-3 {
   position: relative;
 }
@@ -936,6 +1004,7 @@ main .div-counter-container {
 .col-3 img {
   width: 270px;
 }
+
 .col-3 p {
   position: absolute;
   top: 70%;
@@ -944,20 +1013,24 @@ main .div-counter-container {
   font-size: 12px;
   font-weight: 700;
 }
+
 #col-3-btn {
   width: 89px;
   position: absolute;
   top: 90%;
   right: 35%;
 }
+
 .col-4 {
   position: relative;
 
   margin: 0px 40px;
 }
+
 .col-4 img {
   width: 310px;
 }
+
 .col-4 p {
   position: absolute;
   top: 67%;
@@ -966,18 +1039,22 @@ main .div-counter-container {
   font-size: 12px;
   font-weight: 700;
 }
+
 #col-4-btn {
   width: 89px;
   position: absolute;
   top: 85%;
   right: 35%;
 }
+
 .col-5 {
   position: relative;
 }
+
 .col-5 img {
   width: 270px;
 }
+
 .col-5 p {
   position: absolute;
   top: 70%;
@@ -986,20 +1063,24 @@ main .div-counter-container {
   font-size: 12px;
   font-weight: 700;
 }
+
 #col-5-btn {
   width: 89px;
   position: absolute;
   top: 90%;
   right: 35%;
 }
+
 .col-6 {
   position: absolute;
   top: 50%;
   left: 15%;
 }
+
 .col-6 img {
   width: 40px;
 }
+
 /* .... <  vahedha  */
 /* پربازدیدها */
 .porbazdid-sectionR {
@@ -1008,6 +1089,7 @@ main .div-counter-container {
   width: 100%;
   font-size: 16px;
 }
+
 .porbazdid-sectionC {
   /* min-height: 28rem; */
   /* border: dotted yellow; */
@@ -1020,21 +1102,25 @@ main .div-counter-container {
   text-align: center;
   color: #005aa7;
 }
+
 .porbazdid-header-titleC p {
   margin: 1em auto;
   font-size: 2.1em;
   font-weight: 700;
 }
+
 .porbazdid-main-cardR {
   width: 90%;
   justify-content: center;
   margin: 0px auto;
   position: relative;
 }
+
 /* مشخصات کارد */
 .porbazdid-main-cardC {
   padding: 1rem;
 }
+
 .porbazdid-card-div {
   display: flex;
   cursor: pointer;
@@ -1045,38 +1131,45 @@ main .div-counter-container {
   border: 1px solid grey;
   border-radius: 1em;
 }
+
 .porbazdid-card-div:hover {
   animation-name: pulse;
   animation-duration: 800ms;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.08) 0px 1px 0px inset; /* scale: 1.1; */
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  /* scale: 1.1; */
 }
+
 .porbazdid-main-cardR {
   border-radius: 5px;
   margin-bottom: 3px;
   display: none;
 }
+
 .porbazdid-main-cardC img {
   border-radius: 5px;
   margin-bottom: 3px;
   border-radius: 0.8em;
 }
+
 .porbazdid-card-title {
   font-size: 20px;
   font-weight: 600;
   margin-right: 3px;
   margin-bottom: 4px;
-  font-family: yekan;
+
 }
+
 .porbazdid-card-lid {
   font-size: 0.8em;
   font-weight: 700;
   margin-right: 3px;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: yekan;
+
 }
+
 .porbazdid-card-date-div {
   display: flex;
   margin-top: auto;
@@ -1084,34 +1177,42 @@ main .div-counter-container {
   align-self: flex-start;
   justify-self: flex-end;
 }
+
 .porbazdid-card-date-div i {
   font-size: 21px;
   height: 90%;
 }
+
 .porbazdid-card-date-div span {
   width: auto;
   height: 90%;
   font-size: 13px;
   margin-right: 5px;
-  font-family: yekan;
+
 }
+
 .porbazdid-footer-iconR {
   justify-content: center;
 }
+
 .porbazdid-footer-iconC {
   cursor: pointer;
 }
+
 .porbazdid-footer-iconC i:hover {
   cursor: pointer;
   scale: 1.2;
 }
+
 .porbazdid-activ {
   display: -webkit-box;
 }
+
 .porbazdid-footer-iconC-activate {
   scale: 1.3;
   color: coral;
 }
+
 /* رویداد مهم اسلایدر */
 
 .mohem-container {
@@ -1126,30 +1227,37 @@ main .div-counter-container {
   padding: 5em 0px;
   /* cursor: pointer; */
 }
+
 .mohem-slide-button img {
   cursor: pointer;
 }
+
 .mohem-slide-button img:hover {
   animation-name: pulse;
   animation-duration: 1s;
   scale: 1.1;
 }
+
 .mohem-slide-img {
   padding: 1em;
 }
+
 .mohem-slide-img img {
   border-radius: 10%;
 }
+
 .mohem-slide-mohtava {
   padding: 0px 2em;
 }
+
 .mohem-slide-mohtava-key {
   height: 25%;
   align-items: center;
 }
+
 .mohem-slide-mohtava-key span {
   font-size: 1.8em;
-  font-family: yekan;
+
   font-weight: 700;
   padding: 0.5em;
   border-radius: 1em;
@@ -1157,45 +1265,53 @@ main .div-counter-container {
   color: #ffffff;
   cursor: pointer;
 }
+
 .mohem-slide-mohtava-titr {
   height: 10%;
 }
+
 .mohem-slide-mohtava-titr p {
   font-size: 1.8em;
-  font-family: yekan;
+
   cursor: pointer;
   font-weight: 700;
 }
+
 .mohem-slide-mohtava-titr p:hover {
   color: #005aa7;
   scale: 1.1;
   font-size: 1.9em;
 }
+
 .mohem-slide-mohtava-lid {
   height: 35%;
 }
+
 .mohem-slide-mohtava-lid p {
   font-size: 1.3em;
-  font-family: yekan;
+
   font-weight: 700;
   color: dimgray;
   margin-top: 5px;
   text-justify: auto;
   cursor: pointer;
 }
+
 .mohem-slide-mohtava-date {
   height: 10em;
   align-items: center;
   justify-content: start;
   margin: 1em 0em;
 }
+
 .mohem-slide-mohtava-date span {
   font-size: 1.3em;
-  font-family: yekan;
+
   font-weight: 700;
   color: #c1c1c1;
   margin-right: 0.4em;
 }
+
 .mohem-slide {
   font-size: 10px;
   border: 0.1em solid black;
@@ -1207,8 +1323,10 @@ main .div-counter-container {
   border-radius: 1em;
   display: none;
 }
+
 .mohem-activate {
   display: -webkit-box;
 }
+
 /* رویداد مهم اسلایدر */
 /*......................... اسلایدر4 خبر  >................*/

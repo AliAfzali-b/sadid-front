@@ -1,129 +1,106 @@
 <!DOCTYPE html>
 <html lang="en-fa">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ارتباط با ما</title>
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,600,700|Slabo+27px&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ارتباط با ما</title>
 
-    <link rel="stylesheet" href="./style/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,600,700|Slabo+27px&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
 
-    <link rel="stylesheet" href="./style/natani.css" />
-    <link rel="stylesheet" href="./style/flexboxgrid.css" />
-    <link rel="stylesheet" href="./style/home.css" />
-    <link rel="stylesheet" href="./style/media.css" />
-    <link rel="stylesheet" href="./style/components.css" />
-    <link rel="stylesheet" href="./style/archive.css" />
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  </head>
-  <body style="grid-template-rows: 6rem auto 12rem; background-image: none">
-    <div class="loader-mask" id="loaderContainer">
-      <div class="loader" id="loaderGif"></div>
+  <link rel="stylesheet" href="./style/animate.min.css" />
+
+  <link rel="stylesheet" href="./style/natani.css" />
+  <link rel="stylesheet" href="./style/flexboxgrid.css" />
+  <link rel="stylesheet" href="./style/home.css" />
+  <link rel="stylesheet" href="./style/media.css" />
+  <link rel="stylesheet" href="./style/components.css" />
+  <link rel="stylesheet" href="./style/archive.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</head>
+
+<body style="grid-template-rows: 6rem auto 12rem; background-image: none">
+  <div class="loader-mask" id="loaderContainer">
+    <div class="loader" id="loaderGif"></div>
+  </div>
+  <section id="message-btn-on" class="message">
+    <div class="message-header">
+      <img class="message-header-logo"
+        src="./image/Component/message-btn/chat-communication-conversation-svgrepo-com.svg" />
+
+      <div class="message-header-matn">
+        <h1 class="message-header-matn-h1">شهرک صنعتی سدید کرمان</h1>
+        <span class="message-header-matn-span">پشتیبانی آنلاین</span>
+      </div>
+      <img onclick="messageOff()" src="./image/Component/message-btn/close-square-svgrepo-com.svg"
+        class="message-header-btn" />
     </div>
-    <section id="message-btn-on" class="message">
-      <div class="message-header">
-        <img
-          class="message-header-logo"
-          src="./image/Component/message-btn/chat-communication-conversation-svgrepo-com.svg"
-        />
-
-        <div class="message-header-matn">
-          <h1 class="message-header-matn-h1">شهرک صنعتی سدید کرمان</h1>
-          <span class="message-header-matn-span">پشتیبانی آنلاین</span>
-        </div>
-        <img
-          onclick="messageOff()"
-          src="./image/Component/message-btn/close-square-svgrepo-com.svg"
-          class="message-header-btn"
-        />
+    <div class="message-body"></div>
+    <div class="message-footer">
+      <input class="message-footer-input" type="text" value="پیامی ارسال کنید ..." />
+      <div class="message-footer-icons">
+        <img height="30%" src="./image/Component/message-btn/voice-recording-radio-svgrepo-com.svg" alt="" />
+        <img height="30%" src="./image/Component/message-btn/happy-emoji-svgrepo-com.svg" alt="" />
+        <img height="30%" src="./image/Component/message-btn/attach-attachment-clip-svgrepo-com.svg" alt="" />
       </div>
-      <div class="message-body"></div>
-      <div class="message-footer">
-        <input
-          class="message-footer-input"
-          type="text"
-          value="پیامی ارسال کنید ..."
-        />
-        <div class="message-footer-icons">
-          <img
-            height="30%"
-            src="./image/Component/message-btn/voice-recording-radio-svgrepo-com.svg"
-            alt=""
-          />
-          <img
-            height="30%"
-            src="./image/Component/message-btn/happy-emoji-svgrepo-com.svg"
-            alt=""
-          />
-          <img
-            height="30%"
-            src="./image/Component/message-btn/attach-attachment-clip-svgrepo-com.svg"
-            alt=""
-          />
+    </div>
+  </section>
+  <section onclick="messageOn()" class="message-btn">
+    <a href="#"></a>
+  </section>
+  <!-- رویداد ها >-->
+  <a class="roydadha-btn" onclick="roydadOn()" href="#">
+    <p>رویدادها</p>
+  </a>
+  <div id="roydad-div-on" class="roydadha-div">
+    <div class="roydadha-div-box">
+      <div class="roydadha-div-box-row1">
+        <div class="roydadha-div-box-row1-right">
+          <img onclick="roydadOff()" src="./image/Component/roydadha/close-x-svgrepo-com.svg" />
+        </div>
+        <div class="roydadha-div-box-row1-left">
+          <p>مشاهده رویدادها</p>
         </div>
       </div>
-    </section>
-    <section onclick="messageOn()" class="message-btn">
-      <a href="#"></a>
-    </section>
-    <!-- رویداد ها >-->
-    <a class="roydadha-btn" onclick="roydadOn()" href="#"><p>رویدادها</p></a>
-    <div id="roydad-div-on" class="roydadha-div">
-      <div class="roydadha-div-box">
-        <div class="roydadha-div-box-row1">
-          <div class="roydadha-div-box-row1-right">
-            <img
-              onclick="roydadOff()"
-              src="./image/Component/roydadha/close-x-svgrepo-com.svg"
-            />
-          </div>
-          <div class="roydadha-div-box-row1-left"><p>مشاهده رویدادها</p></div>
+      <div class="roydadha-div-box-row2">
+        <div class="roydadha-div-box-row2-right">
+          <p>11 <br />آبان</p>
         </div>
-        <div class="roydadha-div-box-row2">
-          <div class="roydadha-div-box-row2-right">
-            <p>11 <br />آبان</p>
+        <div class="roydadha-div-box-row2-left">
+          <div class="roydadha-div-box-row2-left-up">
+            <p>تقویم کارگاه های آموزشی سدید در فصل پاییز و زمستان 1401</p>
           </div>
-          <div class="roydadha-div-box-row2-left">
-            <div class="roydadha-div-box-row2-left-up">
-              <p>تقویم کارگاه های آموزشی سدید در فصل پاییز و زمستان 1401</p>
-            </div>
-            <div class="roydadha-div-box-row2-left-down">
-              <img src="./image/Component/roydadha/clock-1-svgrepo-com.svg" />
-              <p>تا 29 اسفند ماه</p>
-            </div>
+          <div class="roydadha-div-box-row2-left-down">
+            <img src="./image/Component/roydadha/clock-1-svgrepo-com.svg" />
+            <p>تا 29 اسفند ماه</p>
           </div>
         </div>
-        <div class="roydadha-div-box-row3">
-          <div class="roydadha-div-box-row3-right">
-            <p>
-              &nbsp; 24 <br />
-              اسفند
-            </p>
+      </div>
+      <div class="roydadha-div-box-row3">
+        <div class="roydadha-div-box-row3-right">
+          <p>
+            &nbsp; 24 <br />
+            اسفند
+          </p>
+        </div>
+        <div class="roydadha-div-box-row3-left">
+          <div class="roydadha-div-box-row3-left-up">
+            <p>میز مشاوره حقوقی هفته پایان اسفند ماه</p>
           </div>
-          <div class="roydadha-div-box-row3-left">
-            <div class="roydadha-div-box-row3-left-up">
-              <p>میز مشاوره حقوقی هفته پایان اسفند ماه</p>
-            </div>
-            <div class="roydadha-div-box-row3-left-down">
-              <img src="./image/Component/roydadha/clock-1-svgrepo-com.svg" />
-              <p>تا 29 اسفند ماه</p>
-            </div>
+          <div class="roydadha-div-box-row3-left-down">
+            <img src="./image/Component/roydadha/clock-1-svgrepo-com.svg" />
+            <p>تا 29 اسفند ماه</p>
           </div>
         </div>
       </div>
     </div>
-    <!--< رویداد ها -->
-    <header>
-      <!-- <div id="nav-icon">
+  </div>
+  <!--< رویداد ها -->
+  <header>
+    <!-- <div id="nav-icon">
         <a href="#"
           ><img
             class="pak"
@@ -168,314 +145,304 @@
             alt=""
         /></a>
       </div> -->
-      <nav style="top: 0%">
-        <div class="nav-logo">
-          <a href="#"><img src="./image/SVG/logo.svg" alt="" /></a>
-        </div>
+    <nav style="top: 0%">
+      <div class="nav-logo">
+        <a href="#"><img src="./image/SVG/logo.svg" alt="" /></a>
+      </div>
 
-        <div class="nav-calendar">
-          <img src="./image/SVG/تاریخ.svg" />
-        </div>
-        <div class="nav-icon">
-          <a href="./about.html"><img src="./image/SVG/./signal.svg" alt="" /></a>
-          <a href="./archive.html"><img src="./image/SVG/mail.svg" alt="" /></a>
-          <a href="./taki.html"><img src="./image/SVG/network.svg" alt="" /></a>
-          <a href="./home.html"><img src="./image/SVG/home.svg" alt="" /></a>
-          <a href="./about.html"><img src="./image/SVG/user.svg" alt="" /></a>
-        </div>
+      <div class="nav-calendar">
+        <img src="./image/SVG/تاریخ.svg" />
+      </div>
+      <div class="nav-icon">
+        <a href="./about.html"><img src="./image/SVG/./signal.svg" alt="" /></a>
+        <a href="./archive.html"><img src="./image/SVG/mail.svg" alt="" /></a>
+        <a href="./taki.html"><img src="./image/SVG/network.svg" alt="" /></a>
+        <a href="./home.html"><img src="./image/SVG/home.svg" alt="" /></a>
+        <a href="./about.html"><img src="./image/SVG/user.svg" alt="" /></a>
+      </div>
 
-        <div class="nav-arm">
-          <img width="100%" src="./image/SVG/متن شهرک 2.svg" alt="" />
+      <div class="nav-arm">
+        <img width="100%" src="./image/SVG/متن شهرک 2.svg" alt="" />
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="hamburger-menu">
+        <div class="lines">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
         </div>
+        <div class="x-btn">
+          <div class="x-line x-line-1"></div>
+          <div class="x-line x-line-2"></div>
+        </div>
+      </div>
+
+      <nav class="navigation">
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="./home.html" class="nav-menu-link">صفحه اصلی</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./about.html" class="nav-menu-link">درباره ما</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./taki.html" class="nav-menu-link">پروژه ها</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./archive.html" class="nav-menu-link">آرشیو </a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./taki.html" class="nav-menu-link">تکی</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./taki.html" class="nav-menu-link">جذب سرمایه</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./archive.html" class="nav-menu-link">استخدام</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./taki.html" class="nav-menu-link">پیشنهادات</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./about.html" class="nav-menu-link">مشتریان</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./about.html" class="nav-menu-link">دفاتر</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./about.html" class="nav-menu-link">ارتباط با ما</a>
+          </li>
+        </ul>
       </nav>
-    </header>
-
-    <main>
-      <div class="container">
-        <div class="hamburger-menu">
-          <div class="lines">
-            <div class="line line-1"></div>
-            <div class="line line-2"></div>
-            <div class="line line-3"></div>
+    </div>
+    <div class="row archive-main">
+      <div class="col col-sm-6 col-lg-6 col-xl-6 col-xxl-6 col-xs-12 archive-right">
+        <div class="row jadidtarin-lead">
+          <h3>جدیدترین اخبار ............</h3>
+        </div>
+        <div class="row jadidtarin-card">
+          <div class="col col-lg-4 col-xs-12 jadidtarin-card-img">
+            <img src="./image/archive/01 archive.png" />
           </div>
-          <div class="x-btn">
-            <div class="x-line x-line-1"></div>
-            <div class="x-line x-line-2"></div>
+
+          <div class="col col-lg-8 col-xs-12 jadidtarin-card-content">
+            <div class="jadidtarin-card-content-titr">
+              <h3>شهرک سدید در مسیر تحقق شعار سال 1400</h3>
+            </div>
+            <div class="jadidtarin-card-content-matn">
+              <h5>
+                شهرک صنعتی سدید از ابتدای شروع کار خود را با توجه بسیار ویژه
+                به شعارهای سال‌های مختلف رقم زد؛
+              </h5>
+            </div>
+            <div class="jadidtarin-card-content-footer">
+              <img src="./image/archive/clock.svg" />
+              <p>پنجشنبه 5 فروردین 1400</p>
+            </div>
           </div>
         </div>
+        <div class="row jadidtarin-card">
+          <div class="col col-lg-4 col-xs-12 jadidtarin-card-img">
+            <img src="./image/archive/02 archive.png" />
+          </div>
 
-        <nav class="navigation">
-          <ul class="nav-menu">
-            <li class="nav-menu-item">
-              <a href="./home.html" class="nav-menu-link">صفحه اصلی</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="./about.html" class="nav-menu-link">درباره ما</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="./taki.html" class="nav-menu-link">پروژه ها</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="./archive.html" class="nav-menu-link">آرشیو </a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="./taki.html" class="nav-menu-link">تکی</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="./taki.html" class="nav-menu-link">جذب سرمایه</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="./archive.html" class="nav-menu-link">استخدام</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="./taki.html" class="nav-menu-link">پیشنهادات</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="./about.html" class="nav-menu-link">مشتریان</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="./about.html" class="nav-menu-link">دفاتر</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="./about.html" class="nav-menu-link">ارتباط با ما</a>
-            </li>
-          </ul>
-        </nav>
+          <div class="col col-lg-8 col-xs-12 jadidtarin-card-content">
+            <div class="jadidtarin-card-content-titr">
+              <h3>نقش شهرک های صنعتی در تحقق اقتصاد مقاومتی چیست؟</h3>
+            </div>
+            <div class="jadidtarin-card-content-matn">
+              <h5>
+                یکی از روش های بسیار موثر در تحقق مقاومت اقتصادی بهره گیری از
+                شهرک های صنعتی است؛
+              </h5>
+            </div>
+            <div class="jadidtarin-card-content-footer">
+              <img src="./image/archive/clock.svg" />
+              <p>سه شنبه 9 اسفند 1399</p>
+            </div>
+          </div>
+        </div>
+        <div class="row jadidtarin-card">
+          <div class="col col-lg-4 col-xs-12 jadidtarin-card-img">
+            <img src="./image/archive/03 archive.png" />
+          </div>
+
+          <div class="col col-lg-8 col-xs-12 jadidtarin-card-content">
+            <div class="jadidtarin-card-content-titr">
+              <h3>مزیت های سرمایه گذاری و شروع فعالیت در شهرک های صنعتی</h3>
+            </div>
+            <div class="jadidtarin-card-content-matn">
+              <h5>
+                علاوه بر تامین امکانات زیربنایی در شهرک های صنعتی برای هر کسب
+                و کار، آن هم به شکلی کاملا مناسب، جامع، کاملا موجه و پذیرفتنی,
+                و اقتصادی
+              </h5>
+            </div>
+            <div class="jadidtarin-card-content-footer">
+              <img src="./image/archive/clock.svg" />
+              <p>دوشنبه 14 اسفند 1399</p>
+            </div>
+          </div>
+        </div>
+        <div class="row jadidtarin-card">
+          <div class="col col-lg-4 col-xs-12 jadidtarin-card-img">
+            <img src="./image/archive/02 archive.png" />
+          </div>
+
+          <div class="col col-lg-8 col-xs-12 jadidtarin-card-content">
+            <div class="jadidtarin-card-content-titr">
+              <h3>نقش شهرک های صنعتی در تحقق اقتصاد مقاومتی چیست؟</h3>
+            </div>
+            <div class="jadidtarin-card-content-matn">
+              <h5>
+                یکی از روش های بسیار موثر در تحقق مقاومت اقتصادی بهره گیری از
+                شهرک های صنعتی است؛
+              </h5>
+            </div>
+            <div class="jadidtarin-card-content-footer">
+              <img src="./image/archive/clock.svg" />
+              <p>سه شنبه 9 اسفند 1399</p>
+            </div>
+          </div>
+        </div>
+        <div class="row jadidtarin-card">
+          <div class="col col-lg-4 col-xs-12 jadidtarin-card-img">
+            <img src="./image/archive/03 archive.png" />
+          </div>
+
+          <div class="col col-lg-8 col-xs-12 jadidtarin-card-content">
+            <div class="jadidtarin-card-content-titr">
+              <h3>مزیت های سرمایه گذاری و شروع فعالیت در شهرک های صنعتی</h3>
+            </div>
+            <div class="jadidtarin-card-content-matn">
+              <h5>
+                علاوه بر تامین امکانات زیربنایی در شهرک های صنعتی برای هر کسب
+                و کار، آن هم به شکلی کاملا مناسب، جامع، کاملا موجه و پذیرفتنی,
+                و اقتصادی
+              </h5>
+            </div>
+            <div class="jadidtarin-card-content-footer">
+              <img src="./image/archive/clock.svg" />
+              <p>دوشنبه 14 اسفند 1399</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row archive-main">
-        <div
-          class="col col-sm-6 col-lg-6 col-xl-6 col-xxl-6 col-xs-12 archive-right"
-        >
-          <div class="row jadidtarin-lead">
-            <h3>جدیدترین اخبار ............</h3>
-          </div>
-          <div class="row jadidtarin-card">
-            <div class="col col-lg-4 col-xs-12 jadidtarin-card-img">
-              <img src="./image/archive/01 archive.png" />
-            </div>
-
-            <div class="col col-lg-8 col-xs-12 jadidtarin-card-content">
-              <div class="jadidtarin-card-content-titr">
-                <h3>شهرک سدید در مسیر تحقق شعار سال 1400</h3>
-              </div>
-              <div class="jadidtarin-card-content-matn">
-                <h5>
-                  شهرک صنعتی سدید از ابتدای شروع کار خود را با توجه بسیار ویژه
-                  به شعارهای سال‌های مختلف رقم زد؛
-                </h5>
-              </div>
-              <div class="jadidtarin-card-content-footer">
-                <img src="./image/archive/clock.svg" />
-                <p>پنجشنبه 5 فروردین 1400</p>
-              </div>
-            </div>
-          </div>
-          <div class="row jadidtarin-card">
-            <div class="col col-lg-4 col-xs-12 jadidtarin-card-img">
-              <img src="./image/archive/02 archive.png" />
-            </div>
-
-            <div class="col col-lg-8 col-xs-12 jadidtarin-card-content">
-              <div class="jadidtarin-card-content-titr">
-                <h3>نقش شهرک های صنعتی در تحقق اقتصاد مقاومتی چیست؟</h3>
-              </div>
-              <div class="jadidtarin-card-content-matn">
-                <h5>
-                  یکی از روش های بسیار موثر در تحقق مقاومت اقتصادی بهره گیری از
-                  شهرک های صنعتی است؛
-                </h5>
-              </div>
-              <div class="jadidtarin-card-content-footer">
-                <img src="./image/archive/clock.svg" />
-                <p>سه شنبه 9 اسفند 1399</p>
-              </div>
-            </div>
-          </div>
-          <div class="row jadidtarin-card">
-            <div class="col col-lg-4 col-xs-12 jadidtarin-card-img">
-              <img src="./image/archive/03 archive.png" />
-            </div>
-
-            <div class="col col-lg-8 col-xs-12 jadidtarin-card-content">
-              <div class="jadidtarin-card-content-titr">
-                <h3>مزیت های سرمایه گذاری و شروع فعالیت در شهرک های صنعتی</h3>
-              </div>
-              <div class="jadidtarin-card-content-matn">
-                <h5>
-                  علاوه بر تامین امکانات زیربنایی در شهرک های صنعتی برای هر کسب
-                  و کار، آن هم به شکلی کاملا مناسب، جامع، کاملا موجه و پذیرفتنی,
-                  و اقتصادی
-                </h5>
-              </div>
-              <div class="jadidtarin-card-content-footer">
-                <img src="./image/archive/clock.svg" />
-                <p>دوشنبه 14 اسفند 1399</p>
-              </div>
-            </div>
-          </div>
-          <div class="row jadidtarin-card">
-            <div class="col col-lg-4 col-xs-12 jadidtarin-card-img">
-              <img src="./image/archive/02 archive.png" />
-            </div>
-
-            <div class="col col-lg-8 col-xs-12 jadidtarin-card-content">
-              <div class="jadidtarin-card-content-titr">
-                <h3>نقش شهرک های صنعتی در تحقق اقتصاد مقاومتی چیست؟</h3>
-              </div>
-              <div class="jadidtarin-card-content-matn">
-                <h5>
-                  یکی از روش های بسیار موثر در تحقق مقاومت اقتصادی بهره گیری از
-                  شهرک های صنعتی است؛
-                </h5>
-              </div>
-              <div class="jadidtarin-card-content-footer">
-                <img src="./image/archive/clock.svg" />
-                <p>سه شنبه 9 اسفند 1399</p>
-              </div>
-            </div>
-          </div>
-          <div class="row jadidtarin-card">
-            <div class="col col-lg-4 col-xs-12 jadidtarin-card-img">
-              <img src="./image/archive/03 archive.png" />
-            </div>
-
-            <div class="col col-lg-8 col-xs-12 jadidtarin-card-content">
-              <div class="jadidtarin-card-content-titr">
-                <h3>مزیت های سرمایه گذاری و شروع فعالیت در شهرک های صنعتی</h3>
-              </div>
-              <div class="jadidtarin-card-content-matn">
-                <h5>
-                  علاوه بر تامین امکانات زیربنایی در شهرک های صنعتی برای هر کسب
-                  و کار، آن هم به شکلی کاملا مناسب، جامع، کاملا موجه و پذیرفتنی,
-                  و اقتصادی
-                </h5>
-              </div>
-              <div class="jadidtarin-card-content-footer">
-                <img src="./image/archive/clock.svg" />
-                <p>دوشنبه 14 اسفند 1399</p>
-              </div>
-            </div>
-          </div>
+      <div class="col col-sm-3 col-lg-3 col-xl-3 col-xxl-3 col-xs-12 archive-left">
+        <h3 style="font-size: 20px; padding: 0 20px; font-weight: 700">
+          پربازدیدترین اخبار ..........
+        </h3>
+        <!-- <img id="left-back" src="./image/archive/01 back archive.png"> -->
+        <div class="row archive-left-list">
+          <h3>تسهیلات مناسب واحد های صنایع کوچک شهرک صنعتی سدید</h3>
+          <p>.................................................................................................</p>
         </div>
-        <div
-          class="col col-sm-3 col-lg-3 col-xl-3 col-xxl-3 col-xs-12 archive-left"
-        >
-          <h3 style="font-size: 20px; padding: 0 20px; font-weight: 700">
-            پربازدیدترین اخبار ..........
+        <div class="row archive-left-list">
+          <h3>
+            خسته نباشید سردار سلیمانی فرمانده ی بسیج مستضعفین به مجموعه شهرک
+            صنعتی سدید
           </h3>
-          <!-- <img id="left-back" src="./image/archive/01 back archive.png"> -->
-          <div class="row archive-left-list">
-            <h3>تسهیلات مناسب واحد های صنایع کوچک شهرک صنعتی سدید</h3>
-            <p>.................................................................................................</p>
-          </div>
-          <div class="row archive-left-list">
-            <h3>
-              خسته نباشید سردار سلیمانی فرمانده ی بسیج مستضعفین به مجموعه شهرک
-              صنعتی سدید
-            </h3>
-            <p>.................................................................................................</p>
-          </div>
-          <div class="row archive-left-list">
-            <h3>
-              دعوت از جناب آقای مهندس نجات بخش مدیر عامل شرکت بهیار صنعت اصفهان
-            </h3>
-            <p>.................................................................................................</p>
-          </div>
-          <div class="row archive-left-list">
-            <h3>
-              برگزاری دوره برندینگ با حضور دکتر خردیار مشاور کسب و کارهای بزرگ
-              کشور
-            </h3>
-            <p>.................................................................................................</p>
-          </div>
-          <div class="row archive-left-list">
-            <h3>تسهیلات مناسب واحد های صنایع کوچک شهرک صنعتی سدید</h3>
-            <p>.................................................................................................</p>
-          </div>
-          <div class="row archive-left-list">
-            <h3>
-              دعوت از جناب آقای مهندس نجات بخش مدیر عامل شرکت بهیار صنعت اصفهان
-            </h3>
-            <p>.................................................................................................</p>
-          </div>
-          <div class="row archive-left-list">
-            <h3>تسهیلات مناسب واحد های صنایع کوچک شهرک صنعتی سدید</h3>
-            <p>.................................................................................................</p>
-          </div>
+          <p>.................................................................................................</p>
+        </div>
+        <div class="row archive-left-list">
+          <h3>
+            دعوت از جناب آقای مهندس نجات بخش مدیر عامل شرکت بهیار صنعت اصفهان
+          </h3>
+          <p>.................................................................................................</p>
+        </div>
+        <div class="row archive-left-list">
+          <h3>
+            برگزاری دوره برندینگ با حضور دکتر خردیار مشاور کسب و کارهای بزرگ
+            کشور
+          </h3>
+          <p>.................................................................................................</p>
+        </div>
+        <div class="row archive-left-list">
+          <h3>تسهیلات مناسب واحد های صنایع کوچک شهرک صنعتی سدید</h3>
+          <p>.................................................................................................</p>
+        </div>
+        <div class="row archive-left-list">
+          <h3>
+            دعوت از جناب آقای مهندس نجات بخش مدیر عامل شرکت بهیار صنعت اصفهان
+          </h3>
+          <p>.................................................................................................</p>
+        </div>
+        <div class="row archive-left-list">
+          <h3>تسهیلات مناسب واحد های صنایع کوچک شهرک صنعتی سدید</h3>
+          <p>.................................................................................................</p>
         </div>
       </div>
-    </main>
-    <div class="MyCenter">
-      <div class="MyPagin">
-       <a href="#">اولین صفحه</a>
-       <a href="#">1</a>
-       <a href="#" class="active">2</a>
-       <a href="#">3</a>
-       <a href="#">آخرین صفحه</a>
-      </div>
-      </div>
-    <footer>
-      <!-- 22 2.png -->
+    </div>
+  </main>
+  <div class="MyCenter">
+    <div class="MyPagin">
+      <a href="#">اولین صفحه</a>
+      <a href="#">1</a>
+      <a href="#" class="active">2</a>
+      <a href="#">3</a>
+      <a href="#">آخرین صفحه</a>
+    </div>
+  </div>
+  <footer>
+    <!-- 22 2.png -->
 
-      <img class="img-absolute-bottom" src="./image/22 2.svg" alt="" />
-      <!-- 22 2.svg -->
-      <div class="footer-up">
-        <a href="#"><img src="./image/SVG/Message adress.svg" /></a>
-        <a href="#"><img src="./image/SVG/whats app.svg" /></a>
-        <a href="#"><img src="./image/SVG/Insta.svg" /></a>
-        <a href="#"><img src="./image/SVG/Phone.svg" /></a>
+    <img class="img-absolute-bottom" src="./image/22 2.svg" alt="" />
+    <!-- 22 2.svg -->
+    <div class="footer-up">
+      <a href="#"><img src="./image/SVG/Message adress.svg" /></a>
+      <a href="#"><img src="./image/SVG/whats app.svg" /></a>
+      <a href="#"><img src="./image/SVG/Insta.svg" /></a>
+      <a href="#"><img src="./image/SVG/Phone.svg" /></a>
+    </div>
+    <div id="map">
+      <iframe src="https://nshn.ir/01_bv2-m_ximV9" width="100%" height="30rem" style="border: 0" allowfullscreen=""
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer-down">
+      <div class="footerD-right">
+        <img src="./image/SVG/logo2 2 footer.svg" />
+        <img src="./image/SVG/shahrak footer.svg" />
       </div>
-      <div id="map">
-        <iframe
-          src="https://nshn.ir/01_bv2-m_ximV9"
-          width="100%"
-          height="30rem"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+      <div class="footerD-center">
+        <a href="#">واحد های صنعتی</a>
+        <a href="#">آرشیو</a>
+        <a href="#">چند رسانه ای</a>
+        <a href="#">فرم متقاضیان کار</a>
+        <a href="#">فرم درخواست نیروی کار</a>
       </div>
-      <div class="footer-down">
-        <div class="footerD-right">
-          <img src="./image/SVG/logo2 2 footer.svg" />
-          <img src="./image/SVG/shahrak footer.svg" />
+      <div class="footerD-left">
+        <div class="footerD-left-1">
+          <img src="./image/SVG/Location Footer.svg" />
+          <p>
+            ایران، کرمان، کیلومتر 3 بزرگراه کرمان، زرند، بعد از شهرک ولایت،
+            اولین دوربرگردان، شهرک صنعتی سدید
+          </p>
         </div>
-        <div class="footerD-center">
-          <a href="#">واحد های صنعتی</a>
-          <a href="#">آرشیو</a>
-          <a href="#">چند رسانه ای</a>
-          <a href="#">فرم متقاضیان کار</a>
-          <a href="#">فرم درخواست نیروی کار</a>
+        <div class="footerD-left-2">
+          <img src="./image/SVG/Phone Footer.svg" />
+          <p>034-32741230</p>
         </div>
-        <div class="footerD-left">
-          <div class="footerD-left-1">
-            <img src="./image/SVG/Location Footer.svg" />
-            <p>
-              ایران، کرمان، کیلومتر 3 بزرگراه کرمان، زرند، بعد از شهرک ولایت،
-              اولین دوربرگردان، شهرک صنعتی سدید
-            </p>
-          </div>
-          <div class="footerD-left-2">
-            <img src="./image/SVG/Phone Footer.svg" />
-            <p>034-32741230</p>
-          </div>
-          <div class="footerD-left-3">
-            <img src="./image/SVG/Mobile Footer.svg" />
-            <p>09130695258 - 09137457454 - 09133986772</p>
-          </div>
-          <div class="footerD-left-4">
-            <img src="./image/SVG/Message Footer.svg" />
-            <p>info@kermansadid.ir</p>
-          </div>
-          <div class="footerD-left-5">
-            <img src="./image/SVG/Clock Footer.svg" />
-            <p>شنبه تا پنجشنبه از ساعت 07:30 تا 15:30</p>
-          </div>
+        <div class="footerD-left-3">
+          <img src="./image/SVG/Mobile Footer.svg" />
+          <p>09130695258 - 09137457454 - 09133986772</p>
+        </div>
+        <div class="footerD-left-4">
+          <img src="./image/SVG/Message Footer.svg" />
+          <p>info@kermansadid.ir</p>
+        </div>
+        <div class="footerD-left-5">
+          <img src="./image/SVG/Clock Footer.svg" />
+          <p>شنبه تا پنجشنبه از ساعت 07:30 تا 15:30</p>
         </div>
       </div>
-    </footer>
-    <script src="./js/home.js"></script>
-    <script src="./js/components.js"></script>
-  </body>
+    </div>
+  </footer>
+  <script src="./scripts/home.js"></script>
+  <script src="./scripts/components.js"></script>
+</body>
+
 </html>

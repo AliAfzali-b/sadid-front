@@ -1,11 +1,3 @@
-@font-face {
-  font-family: iran;
-  src: url("../fonts/Iranian\ Sans.ttf");
-}
-@font-face {
-  font-family: yekan;
-  src: url("../fonts/B\ Yekan_YasDL.com.ttf");
-}
 .main-taki {
   width: 100vw;
   height: auto;
@@ -13,6 +5,7 @@
   display: flex;
   justify-content: space-around;
 }
+
 .col-right {
   /* width: 60%; */
   height: auto;
@@ -22,31 +15,36 @@
   align-items: center;
   padding: 4px;
 }
+
 .right-head {
-  font-family: yekan;
+
   width: 100%;
   height: 30px;
   margin: 5px 0;
   background-color: rgba(0, 0, 0, 0.04);
 }
+
 .right-head p {
   font-size: 1.5em;
-  font-family: yekan;
+
   margin: 5px 100px 5px 0;
 }
+
 .right-titr {
   width: 100%;
   /* height: 80px; */
-  font-family: yekan;
+
   margin: 2em 0px;
   text-align: justify;
 }
+
 .right-titr h2 {
   font-size: 3em;
   font-weight: 700;
-  font-family: yekan;
+
   /* padding: 5px 100px 5px 0; */
 }
+
 .right-image {
   width: 100%;
   height: auto;
@@ -55,34 +53,41 @@
   align-items: center;
   margin-top: 3em;
 }
+
 .right-image img {
   width: 100%;
   height: auto;
 }
+
 .right-detail {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: yekan;
+
 }
+
 .right-detail img {
   margin: 5px;
   align-items: center;
   text-align: center;
 }
+
 .right-detail-right {
   display: flex;
   align-items: center;
 }
+
 .right-detail-left {
   display: flex;
 }
+
 .right-detail-left img {
   border: 1px solid;
-  font-family: yekan;
+
   border-radius: 5px;
 }
+
 .right-subTitr {
   font-size: 14px;
   font-weight: 700;
@@ -92,15 +97,17 @@
   font-size: 1.8em;
   color: #005aa7;
 }
+
 .right-matn {
   text-align: center;
   margin: 0px 40px;
 
 }
+
 .right-matn p {
   text-align: justify;
   font-size: 1.5em;
-  font-family: yekan;
+
   font-weight: 700;
   cursor: pointer;
 }
@@ -110,12 +117,14 @@
   align-self: start;
   margin: 50px 80px 15px 0;
 }
+
 .right-didgah p {
-  font-family: yekan;
+
   color: #005aa7;
   font-size: 16px;
   font-weight: 700;
 }
+
 .right-ersal {
   border: 1px solid;
   border-radius: 10px;
@@ -123,50 +132,60 @@
   flex-direction: column;
   width: 90%;
   margin: 10px;
-  font-family: yekan;
+
 }
+
 .right-ersal-top {
   display: flex;
   justify-content: start;
   margin: 10px;
-  font-family: yekan;
+
 }
+
 .right-ersal-top-right {
   width: 50%;
   padding: 10px;
 }
+
 .right-ersal-top-right p {
-  font-family: yekan;
+
   padding: 15px 0;
 }
+
 #esm {
   width: 90%;
   height: 45px;
   font-size: 1.1rem;
-  font-family: yekan;
+
 }
+
 .right-ersal-top-left {
   width: 50%;
   padding: 10px;
 }
+
 .right-ersal-top-left p {
   padding: 15px 0;
-  font-family: yekan;
+
 }
+
 #email {
   width: 90%;
   height: 45px;
-  font-family: yekan;
+
   font-size: 1.1rem;
 }
+
 .right-ersal-center {
   width: 100%;
   margin: 6px 10px;
   padding: 10px;
 }
+
 .right-ersal-center p {
   padding: 15px 0;
 }
+
 #nazar {
   width: 90%;
   height: 150px;
@@ -178,6 +197,7 @@
   justify-content: end;
   padding: 20px 40px;
 }
+
 .right-ersal-bottom button {
   font-size: 1.3rem;
   color: #ffffff;
@@ -189,6 +209,7 @@
   font-weight: 550;
   cursor: pointer;
 }
+
 .right-ersal-bottom button:hover {
   scale: 1.2;
   background-color: #005aa7;
@@ -207,25 +228,30 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  font-family: yekan;
+
 
 }
+
 .archive-left-list h3 {
   font-size: 2em;
   font-weight: 700;
   /* padding: 40px 4px; */
-  font-family: yekan;
+
   cursor: pointer;
   opacity: 0.8;
-  text-align: justify;margin: 0.1em;
+  text-align: justify;
+  margin: 0.1em;
 }
+
 .archive-left-list p {
   font-size: 0.9rem;
 
 }
+
 .archive-left-list h3:hover {
   color: #005bc5;
-scale: 1.2;
-background-color: rgba(25, 72, 229, 0.4);
+  scale: 1.2;
+  background-color: rgba(25, 72, 229, 0.4);
 
-transition: 1s;}
+  transition: 1s;
+}

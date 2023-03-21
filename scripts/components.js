@@ -236,12 +236,3 @@ setInterval(() => {
     slideIndexPic
   );
 }, 6000);
-
-
-// For Live Projects
-window.addEventListener("load", function () {
-  document.querySelector("body").classList.add("preloader-done");
-  document.getElementById("loaderContainer").style.display = "none";
-});
-
-

@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .row-container-col {
   display: flex;
   flex-direction: column;
@@ -20,19 +21,20 @@
 
 
 .row-up-col-1 h2 {
-  font-family: yekan;
   font-size: 20px;
   font-weight: 800;
   line-height: 34.55px;
   color: #005aa7;
   padding: 20px 0 40px 0;
 }
+
 .row-up-col-2 {
   display: flex;
   justify-content: center;
 }
+
 .row-up-col-2 h3 {
-  font-family: yekan;
+
   font-size: 14px;
   font-weight: 700;
   line-height: 29px;
@@ -41,6 +43,7 @@
   width: 70%;
   padding-bottom: 10px;
 }
+
 .row-line {
   width: 70%;
   display: flex;
@@ -48,26 +51,29 @@
   align-items: center;
   padding: 20px 0;
 }
+
 .row-down {
   width: 85%;
   display: flex;
   justify-content: center;
   padding-right: 9px;
 }
+
 .row-down-right {
   display: flex;
   flex-direction: column;
 }
+
 .row-down-right h6 {
   font-size: 20px;
   font-weight: 800;
   line-height: 35px;
-  font-family: yekan;
+
   color: #005aa7;
 }
 
 .row-down-right p {
-  font-family: yekan;
+
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -82,10 +88,11 @@
   flex-direction: column;
   align-items: end;
 }
+
 /* ersal */
 #ersal-p {
   color: #515151;
-  font-family: yekan;
+
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -93,6 +100,7 @@
   align-self: flex-start;
   padding-right: 49px;
 }
+
 .right-ersal {
   border: 1px solid;
   border-radius: 10px;
@@ -101,45 +109,56 @@
   width: 90%;
   margin: 10px;
 }
+
 .right-ersal-top {
   display: flex;
   justify-content: start;
   margin: 10px;
 }
+
 .right-ersal-top-right {
   width: 50%;
-  padding: 10px;font-size: 1.4em;
+  padding: 10px;
+  font-size: 1.4em;
 }
+
 .right-ersal-top-right p {
   padding: 1em 0;
 }
+
 #esm {
   width: 90%;
   height: 45px;
-  
+
 }
+
 .right-ersal-top-left {
   width: 50%;
- 
+
 }
+
 .right-ersal-top-left p {
   font-size: 2em;
   padding: 15px 0;
 }
+
 #email {
   width: 90%;
   height: 45px;
   font-size: 1.1rem;
 }
+
 .right-ersal-center {
   width: 100%;
   margin: 6px 10px;
   padding: 10px;
 }
+
 .right-ersal-center p {
   padding: 15px 0;
   font-size: 1.6em;
 }
+
 #nazar {
   width: 90%;
   height: 150px;
@@ -151,6 +170,7 @@
   justify-content: end;
   padding: 20px 40px;
 }
+
 .right-ersal-bottom button {
   font-size: 1.3rem;
   color: #ffffff;
@@ -162,6 +182,7 @@
   font-weight: 550;
   cursor: pointer;
 }
+
 .right-ersal-bottom button:hover {
   scale: 1.2;
   background-color: #005aa7;
@@ -181,11 +202,13 @@
   align-items: center;
   padding: 20px;
 }
+
 .archive-left-list h3 {
   font-size: 14px;
   font-weight: 700;
   /* padding: 40px 4px; */
 }
+
 .archive-left-list p {
   font-size: 0.9rem;
 }
