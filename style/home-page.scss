@@ -41,4 +41,165 @@ main.page-content {
       }
     }
   }
+  .home-page-section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 100px 20px;
+    .sec-1-tabs {
+      width: 566px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .hr-line {
+        background-color: #c1c1c1;
+        width: 100%;
+        height: 1px;
+      }
+      .buttons-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .single-tabs-btn {
+          font-weight: 700;
+          font-size: 16px;
+          text-align: center;
+          line-height: 28px;
+          padding: 10px 30px;
+          background-color: transparent;
+          border: none;
+          color: rgba(119, 119, 119, 1);
+          cursor: pointer;
+          position: relative;
+          transition: 0.3s ease-in-out;
+          @media (max-width: 576px) {
+            width: 50%;
+          }
+          &:hover,
+          &.active {
+            color: #f49813;
+            &::after {
+              transform: scaleX(1);
+            }
+          }
+          &::after {
+            content: "";
+            transition: 0.3s ease-in-out;
+            position: absolute;
+            background-color: #f49813;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            transform: scaleX(0);
+          }
+        }
+      }
+    }
+    .sec-1-content-container {
+      position: relative;
+      height: 400px;
+      margin-top: 15px;
+      position: relative;
+      .sec-1-tab-dots-container {
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        flex-direction: row-reverse;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .sec-1-tab-dots {
+          margin-right: 18px;
+          .sec-1-tab-single-dot {
+            background-color: #c1c1c1;
+            width: 14px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            height: 14px;
+            border-radius: 50px;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            &:hover,
+            &.active {
+              background-color: #f49813;
+            }
+          }
+        }
+        .sec-1-arrow {
+        }
+      }
+      .single-tab-content {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        transition: 0.4s ease-in-out;
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+        &.active {
+          opacity: 1;
+          pointer-events: all;
+        }
+        @media (max-width: 576px) {
+          flex-direction: column;
+        }
+        /* justify-content: space-between; */
+        .right-side {
+          margin-left: 10px;
+          padding: 0;
+          background-color: green;
+          /* flex-grow: calc(100% / 3%); */
+          flex: 1;
+          /* width: calc(100% / 3%); */
+          border-radius: 10px;
+          overflow: hidden;
+          position: absolute;
+          position: relative;
+          .right-side-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+          }
+          .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background: rgb(0, 0, 0);
+            background: linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 1) 0%,
+              rgba(0, 0, 0, 0) 100%
+            );
+            display: flex;
+            justify-content: center;
+            .overlay-text {
+              margin-top: auto;
+              margin-bottom: 20px;
+              text-align: center;
+              color: white;
+              font-weight: 800;
+              font-size: 32px;
+              line-height: 55px;
+            }
+          }
+        }
+        .left-side {
+          margin-right: 10px;
+          /* flex-grow: calc(200% / 3%); */
+          /* width: calc(200% / 3%); */
+          flex: 2;
+          background-color: blue;
+        }
+      }
+    }
+  }
 }

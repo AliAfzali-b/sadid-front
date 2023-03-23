@@ -1,4 +1,7 @@
 /* page-loader-styles starts */
+a:not(.have-decoration) {
+  text-decoration: none;
+}
 #loaderContainer {
   height: 100vh;
   width: 100vw;
@@ -65,7 +68,6 @@ $header-transition: 0.3s ease-in-out;
   top: 0;
   z-index: 10;
   transition: $header-transition;
-
   nav {
     display: flex;
     justify-content: space-evenly;
@@ -112,3 +114,280 @@ $header-transition: 0.3s ease-in-out;
 }
 /* header styles ends */
 /* layout styles ends */
+/* breadcrumb starts */
+.breadcrumb {
+  display: inline-block;
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    direction: rtl; /* Right-to-left */
+    li {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 21px;
+      a {
+        color: rgba(119, 119, 119, 1);
+      }
+      &:not(:first-child)::before {
+        content: "\00BB"; /* Chevron symbol */
+        margin: 0 8px;
+      }
+    }
+  }
+}
+/* breadcrumb ends */
+/*single-blog starts*/
+.single-blog {
+  .blog-title {
+    color: rgb(0, 90, 167);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    @media (max-width: 576px) {
+      margin-bottom: 1.5em;
+      margin-top: 0.5em;
+    }
+  }
+  .blog-thumbnail {
+    border-radius: 8px;
+    width: 100%;
+    max-height: 70vh;
+    object-fit: cover;
+  }
+  .blog-details {
+    .right-side {
+      p,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: #777777;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 21px;
+      }
+    }
+    .left-side {
+      display: flex;
+      img,
+      svg {
+        border: 1px solid #c1c1c1;
+        border-radius: 3px;
+        padding: 3px;
+        margin-right: 5px;
+        color: #c1c1c1;
+        transition: 0.2s ease-in-out;
+        &:hover {
+          color: #727272;
+        }
+      }
+    }
+  }
+  .blog-excerpt {
+    background: #ffffff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+    h2 {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 2em;
+      text-align: center;
+    }
+  }
+  .blog-content {
+    p {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.9em;
+      display: flex;
+      align-items: center;
+      text-align: justify;
+      color: #777777;
+    }
+  }
+}
+/*single-blog ends*/
+/* side-bar starts*/
+.side-bar {
+  .side-bar-title-container {
+    .side-bar-title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 35px;
+      background-color: white;
+      display: inline;
+      padding-left: 15px;
+    }
+
+    position: relative;
+    &::before {
+      position: absolute;
+      z-index: -1;
+      content: "";
+      border-bottom: 1px dashed #c1c1c1;
+      top: 50%;
+      left: 3px;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 5px;
+      height: 5px;
+      border-radius: 1px;
+      background-color: #c1c1c1;
+      transform: rotate(45deg) translateY(-50%);
+      top: 50%;
+      left: 0;
+    }
+  }
+  .links {
+    a {
+      width: 100%;
+      padding-bottom: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: inline-block;
+      position: relative;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 24px;
+      color: #777777;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        color: #005aa7;
+      }
+      &:not(:last-child) {
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          border-bottom: 1px dashed #c1c1c1;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+/* side-bar ens*/
+/* comments-section starts*/
+.comments-section {
+  form label,
+  form input[type="email"],
+  form textarea {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  form input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  li {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .comments-list {
+    .avatar {
+      max-width: 30px;
+      margin-left: 5px;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 50px;
+      }
+    }
+    .name {
+      font-weight: bold;
+      margin-left: 25px;
+    }
+
+    .date {
+      color: #999;
+      font-size: 11px;
+    }
+    p {
+      margin: 10px 10px;
+      margin-top: 5px;
+      line-height: 1.9em;
+      font-size: 13px;
+      color: #343434;
+      text-align: justify;
+      text-align-last: right;
+    }
+  }
+  .comments-section-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #005aa7;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  .comments-form {
+    padding: 18px 30px;
+    background: #ffffff;
+    box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    label {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    input,
+    textarea {
+      width: calc(100% - 22px);
+      padding: 0.5em 10px;
+      border: 1px solid #c1c1c1;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      width: 160px;
+      text-align: center;
+      background-color: #f49813;
+      color: white;
+      border-radius: 8px;
+      border: 1px solid #f49813;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        background-color: transparent;
+        color: black;
+      }
+    }
+  }
+}
+/* comments-section ends */

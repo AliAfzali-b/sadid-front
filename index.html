@@ -20,9 +20,6 @@
   <!-- load page styles ends -->
   <!-- load fonts starts -->
   <link rel="stylesheet" href="./fonts/IRANYekan/css/style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,600,700|Slabo+27px&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
   <!-- load fonts ends -->
   <!-- load scripts start -->
   <script type="text/javascript" src="./scripts/jquery-3.6.4.min.js"></script>
@@ -73,6 +70,64 @@
       <img class="hero-img" src="./assets/images/hero-img.jpg" alt="hero-img" />
       <img class="hero-sub-img" src="./assets/images/hero-sub-img.png" alt="hero-img" />
       <a href="#" class="hero-link">درباره ما بیشتر بدانید</a>
+    </section>
+    <section class="home-page-section-1">
+      <div class="sec-1-tabs">
+        <div class="hr-line"></div>
+        <div class="buttons-container d-flex juastify-content-center">
+          <button class="single-tabs-btn" data-index="1"
+            onclick="handle_home_page_sec_1_button_click(this)">فیلم</button>
+          <button class="single-tabs-btn active" data-index="2"
+            onclick="handle_home_page_sec_1_button_click(this)">تصاویر</button>
+          <button class="single-tabs-btn" data-index="3"
+            onclick="handle_home_page_sec_1_button_click(this)">خبر</button>
+          <button class="single-tabs-btn" data-index="4"
+            onclick="handle_home_page_sec_1_button_click(this)">ویژه</button>
+        </div>
+        <div class="hr-line"></div>
+      </div>
+      <div class="container sec-1-content-container">
+        <div class="sec-1-tab-dots-container d-none d-md-flex">
+          <div class="sec-1-tab-dots">
+            <div class="sec-1-tab-single-dot" data-index="1" onclick="handle_home_page_sec_1_button_click(this)"></div>
+            <div class="sec-1-tab-single-dot" data-index="2" onclick="handle_home_page_sec_1_button_click(this)"></div>
+            <div class="sec-1-tab-single-dot" data-index="3" onclick="handle_home_page_sec_1_button_click(this)"></div>
+            <div class="sec-1-tab-single-dot" data-index="4" onclick="handle_home_page_sec_1_button_click(this)"></div>
+
+          </div>
+          <div class="sec-1-arrow" onclick="handle_home_page_sec_1_next_click()"><svg width="28" height="36"
+              viewBox="0 0 28 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.19375 34.5687C3.27708 35.1646 2.3485 35.1985 1.408 34.6705C0.469334 34.1443 0 33.3312 0 32.2312V3.76873C0 2.66873 0.469334 1.85473 1.408 1.32673C2.3485 0.800559 3.27708 0.835393 4.19375 1.43123L26.6062 15.6625C27.4312 16.2125 27.8438 16.9916 27.8438 18C27.8438 19.0083 27.4312 19.7875 26.6062 20.3375L4.19375 34.5687Z"
+                fill="#C1C1C1" />
+            </svg>
+          </div>
+        </div>
+        <!-- single tab-content-starts -->
+        <div class="single-tab-content" data-index="1">
+          <div class="right-side">
+            <img class="right-side-img" src="./assets/images/building.jpg" alt="تصویر" />
+            <div class="overlay">
+              <h6 class="overlay-text">عکس های منتخب</h6>
+            </div>
+          </div>
+          <div class="left-side">dsf
+          </div>
+        </div>
+        <!-- single tab-content-ends -->
+        <!-- single tab-content-starts -->
+        <div class="single-tab-content" data-index="2">
+          <div class="right-side">
+            <img class="right-side-img" src="./assets/images/hero-img.jpg" alt="تصویر" />
+            <div class="overlay">
+              <h6 class="overlay-text">عکس های 2</h6>
+            </div>
+          </div>
+          <div class="left-side">dsfdsmfbskjdfbakjsdnlksdnlkn
+          </div>
+        </div>
+        <!-- single tab-content-ends -->
+      </div>
     </section>
   </main>
   <section id="message-btn-on" class="message">
