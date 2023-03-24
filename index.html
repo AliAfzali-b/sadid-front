@@ -5,7 +5,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="توضیحات صفحه" />
   <title>سدید</title>
+
 
   <link rel="stylesheet" href="./style/natani.css" />
   <link rel="stylesheet" href="./style/home.css" />
@@ -130,31 +132,6 @@
       </div>
     </section>
   </main>
-  <section id="message-btn-on" class="message">
-    <div class="message-header">
-      <img class="message-header-logo"
-        src="./image/Component/message-btn/chat-communication-conversation-svgrepo-com.svg" />
-
-      <div class="message-header-matn">
-        <h1 class="message-header-matn-h1">شهرک صنعتی سدید کرمان</h1>
-        <span class="message-header-matn-span">پشتیبانی آنلاین</span>
-      </div>
-      <img onclick="messageOff()" src="./image/Component/message-btn/close-square-svgrepo-com.svg"
-        class="message-header-btn" />
-    </div>
-    <div class="message-body"></div>
-    <div class="message-footer">
-      <input class="message-footer-input" type="text" value="پیامی ارسال کنید ..." />
-      <div class="message-footer-icons">
-        <img height="30%" src="./image/Component/message-btn/voice-recording-radio-svgrepo-com.svg" alt="" />
-        <img height="30%" src="./image/Component/message-btn/happy-emoji-svgrepo-com.svg" alt="" />
-        <img height="30%" src="./image/Component/message-btn/attach-attachment-clip-svgrepo-com.svg" alt="" />
-      </div>
-    </div>
-  </section>
-  <section onclick="messageOn()" class="message-btn">
-    <a href="#"></a>
-  </section>
   <!-- رویداد ها >-->
   <a class="roydadha-btn" onclick="roydadOn()" href="#">
     <p>رویدادها</p>
@@ -1328,11 +1305,8 @@
     </section>
     <!--.......< شرکت ها ...........-->
   </main>
-  <footer>
-    <!-- 22 2.png -->
+  <footer class="site-footer">
     <img class="img-absolute-bottom" src="./image/22 2.svg" alt="" />
-
-    <!-- 22 2.svg -->
     <div class="footer-up">
       <a href="#"><img src="./image/SVG/Message adress.svg" /></a>
       <a href="#"><img src="./image/SVG/whats app.svg" /></a>
@@ -1350,13 +1324,18 @@
         <img src="./image/SVG/shahrak footer.svg" />
       </div>
       <div class="footerD-center">
-        <a href="#">واحد های صنعتی</a>
-        <a href="#">آرشیو</a>
-        <a href="#">چند رسانه ای</a>
-        <a href="#">فرم متقاضیان کار</a>
-        <a href="#">فرم درخواست نیروی کار</a>
+        <ul class="useful-links">
+          <li class=""><a href="#">واحد های صنعتی</a></li>
+          <li class=""><a href="#">آرشیو</a></li>
+          <li class=""><a href="#">چند رسانه ای</a></li>
+          <li class=""><a href="#">فرم متقاضیان کار</a></li>
+          <li class=""><a href="#">فرم درخواست نیروی کار</a></li>
+        </ul>
       </div>
       <div class="footerD-left">
+        <ul>
+          <li></li>
+        </ul>
         <div class="footerD-left-1">
           <img src="./image/SVG/Location Footer.svg" />
           <p>
@@ -1381,6 +1360,9 @@
           <p>شنبه تا پنجشنبه از ساعت 07:30 تا 15:30</p>
         </div>
       </div>
+    </div>
+    <div class="copy-write">
+      <h6 class="text-center py-1">طراحی و توسعه توسط سدید © 2023. همه حقوق محفوظ است.</h6>
     </div>
   </footer>
   <script src="./scripts/home.js"></script>
