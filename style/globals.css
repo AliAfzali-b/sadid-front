@@ -72,6 +72,11 @@ body {
   left: 0;
   top: 0;
 }
+@media (max-width: 576px) {
+  .header-img {
+    display: none;
+  }
+}
 
 .site-header {
   background-color: #005aa7;

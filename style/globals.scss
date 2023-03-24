@@ -66,6 +66,9 @@ $header-transition: 0.3s ease-in-out;
 .header-img{
   position: fixed;
   z-index:-1;left:0;top: 0;
+  @media (max-width:576px){
+    display: none;
+  }
 }
 .site-header {
   background-color: #005aa7;
