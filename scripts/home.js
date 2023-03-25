@@ -50,58 +50,6 @@ function Message() {
   msg.classList.add;
 }
 
-// mohem component
-let mohemIndex = 1;
-function setMohem(input, index) {
-  mohemIndex = index;
-  let item = document.querySelector(`#${input}`);
-  let slide = [...document.querySelector(".mohem-container").children];
-  slide.forEach((element) => {
-    element.classList.remove("mohem-activate");
-  });
-  item.classList.add("mohem-activate");
-}
-setInterval(() => {
-  mohemIndex += 1;
-  if (mohemIndex == 7) {
-    mohemIndex = 1;
-  }
-  setMohem(`ms${mohemIndex}`, mohemIndex);
-}, 4000);
-// vahedha component
-let vahedIndex = 1;
-function setVahed(input, index) {
-  vahedIndex = index;
-  let item = document.querySelector(`#${input}`);
-  let slide = [...document.querySelector(".vahedha-container").children];
-  slide.forEach((element) => {
-    element.classList.remove("frame-vahedha-activate");
-  });
-  item.classList.add("frame-vahedha-activate");
-}
-setInterval(() => {
-  vahedIndex += 1;
-  if (vahedIndex == 4) {
-    vahedIndex = 1;
-  }
-  setVahed(`va${vahedIndex}`, vahedIndex);
-}, 8000);
-
-function vahedPluse() {
-  vahedIndex += 1;
-  if (vahedIndex == 4) {
-    vahedIndex = 1;
-  }
-  setVahed(`va${vahedIndex}`, vahedIndex);
-}
-function vahedMinus() {
-  vahedIndex -= 1;
-  if (vahedIndex == 0) {
-    vahedIndex = 3;
-  }
-  setVahed(`va${vahedIndex}`, vahedIndex);
-}
-
 /* message */
 function messageOn() {
   document.getElementById("message-btn-on").style.display = "flex";

@@ -24,3 +24,17 @@ $(function () {
   $(".lazy").lazy();
 });
 //jquery lazy loading ends
+window.addEventListener("load", () => {
+  document.querySelector(".hamburger-menu").addEventListener("click", () => {
+    document.querySelector("#modal-navbar").classList.toggle("active");
+    document.querySelector(".hamburger-menu").classList.toggle("active");
+  });
+  document.querySelector(".show-events-btn").addEventListener("click", () => {
+    document.querySelector(".show-events-btn").classList.toggle("active");
+    document.querySelector(".events-modal").classList.toggle("active");
+  });
+  document.querySelector(".hide-events-btn").addEventListener("click", () => {
+    document.querySelector(".show-events-btn").classList.toggle("active");
+    document.querySelector(".events-modal").classList.toggle("active");
+  });
+});
